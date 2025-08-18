@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Equipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Competitivo</h1>
+
+        <div id="placar">
+            <div class="team team-a">Equipe A: <span id="pontosA">0</span></div>
+            <div class="team team-b">Equipe B: <span id="pontosB">0</span></div>
+        </div>
+
+        <div id="status">
+            <div id="equipeVez" class="badge team-a">Vez da Equipe: A</div>
+            <div id="contador">Tempo: 120s</div>
+            <div id="dificuldade" class="badge diff facil">Nível: Fácil</div>
+        </div>
+
+        <div id="card">
+            <div id="pergunta">Carregando pergunta...</div>
+            <div id="respostas"></div>
+        </div>
+    </div>
+
+<!-- Modal de troca de equipe -->
+<div id="modalOverlay" class="modal-overlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-labelledby="modalTitulo" aria-describedby="modalMensagem">
+    <h2 id="modalTitulo">Vez da próxima equipe</h2>
+    <p id="modalMensagem">Resposta incorreta. Agora é a vez da Equipe B.</p>
+    <button id="modalBtnContinuar" class="btn">Continuar</button>
+  </div>
+</div>
+    <script src="script.js"></script>
+</html>

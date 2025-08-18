@@ -1,0 +1,272 @@
+/* Reset simples e base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #0f172a;
+    --card: #111827;
+    --muted: #94a3b8;
+    --text: #e5e7eb;
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --a: #06b6d4;   /* cyan for A */
+    --b: #f59e0b;   /* amber for B */
+}
+
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    color: var(--text);
+    background: radial-gradient(1200px 800px at 10% 10%, #111827 0%, #0B1220 30%, #0f172a 60%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+
+#placar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+#placar .team {
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 12px 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#placar .team.team-a span {
+    color: var(--a);
+}
+#placar .team.team-b span {
+    color: var(--b);
+}
+
+#status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0 16px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(17,24,39,0.6);
+    backdrop-filter: blur(6px);
+}
+
+.badge.team-a {
+    color: var(--a);
+    border-color: color-mix(in oklab, var(--a), white 20%);
+}
+.badge.team-b {
+    color: var(--b);
+    border-color: color-mix(in oklab, var(--b), white 20%);
+}
+
+#contador {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* Card da pergunta */
+#card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+#pergunta {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+/* Lista de respostas (botões) */
+#respostas {
+    display: grid;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.resposta {
+    display: block;
+    text-align: left;
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: var(--text);
+    background: linear-gradient(180deg, rgba(99,102,241,0.12), rgba(99,102,241,0.08));
+    border-radius: 12px;
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: transform 120ms ease, background 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.resposta:hover {
+    transform: translateY(-1px);
+    border-color: color-mix(in oklab, var(--primary), white 25%);
+    background: linear-gradient(180deg, rgba(99,102,241,0.18), rgba(99,102,241,0.1));
+    box-shadow: 0 10px 22px rgba(79,70,229,0.2);
+}
+
+.resposta:active {
+    transform: translateY(0);
+}
+
+/* Responsivo */
+@media (max-width: 520px) {
+    h1 {
+        font-size: 22px;
+    }
+    #placar {
+        grid-template-columns: 1fr;
+    }
+    #status {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+}
+
+
+/* Indicador de dificuldade */
+.badge.diff {
+    border-color: rgba(255,255,255,0.15);
+}
+.badge.diff.facil {
+    color: #22c55e; /* verde */
+    border-color: color-mix(in oklab, #22c55e, white 25%);
+}
+.badge.diff.medio {
+    color: #f59e0b; /* âmbar */
+    border-color: color-mix(in oklab, #f59e0b, white 25%);
+}
+.badge.diff.dificil {
+    color: #ef4444; /* vermelho */
+    border-color: color-mix(in oklab, #ef4444, white 25%);
+}
+
+
+/* Modal de troca de equipe */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-overlay.show { display: flex; }
+
+.modal {
+  background: var(--card-bg, #111827);
+  color: var(--text-color, #e5e7eb);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  width: min(92vw, 520px);
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(8px) scale(0.98);
+}
+
+.modal.pop {
+  animation: modalPop 240ms ease forwards;
+}
+
+@keyframes modalPop {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal .btn {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: var(--accent, #2563eb);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.modal .btn:hover { filter: brightness(1.05); }
+
+/* Animação de erro no botão clicado */
+.resposta.wrong {
+  background: #7f1d1d !important;
+  border-color: #b91c1c !important;
+  color: #fff !important;
+}
+.resposta.shake { animation: shake 0.6s ease; }
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(-8px); }
+  30% { transform: translateX(8px); }
+  45% { transform: translateX(-6px); }
+  60% { transform: translateX(6px); }
+  75% { transform: translateX(-3px); }
+  90% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
+}
+
+/* Visual de acerto */
+.resposta.correct {
+  background: #065f46 !important;   /* verde escuro */
+  border-color: #10b981 !important;  /* verde */
+  color: #eafff7 !important;
+  animation: pulse-win 600ms ease;
+}
+
+@keyframes pulse-win {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+/* Transição suave ao trocar pergunta/respostas */
+.fade-in {
+  animation: fadeInUp 240ms ease both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Já existiam as classes de erro; mantendo:
+   .resposta.wrong + .resposta.shake e @keyframes shake */

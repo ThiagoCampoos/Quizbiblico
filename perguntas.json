@@ -1,0 +1,519 @@
+[
+  {
+    "pergunta": "Nome da sogra de Rute",
+    "respostas": ["Noemi", "Abigail", "Débora", "Raabe"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Marido de Noemi",
+    "respostas": ["Elimeleque", "Elcana", "Ebenezer", "Elcosita"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Nacionalidade de Rute",
+    "respostas": ["Mobita", "Edomita", "Amorreu", "Hitita"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Primeiro marido de Rute",
+    "respostas": ["Malom", "Madom", "Malquieu", "Quilion"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Segundo marido de Rute",
+    "respostas": ["Boaz", "Jefté", "Nabal", "Obede"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Esposa de Nabal",
+    "respostas": ["Abigail", "Ana", "Jezebel", "Bate-Seba"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Primogénito de Davi",
+    "respostas": ["Amnom", "Absalão", "Quileabe", "Adonias"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+
+  {
+    "pergunta": "Em qual cidade Jesus nasceu?",
+    "respostas": ["Belém", "Jerusalém", "Nazaré", "Cafarnaum"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Onde Jesus cresceu?",
+    "respostas": ["Nazaré", "Belém", "Betânia", "Jericó"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem foi o primeiro rei de Israel?",
+    "respostas": ["Saul", "Davi", "Salomão", "Ezequias"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem ungiu Davi como rei?",
+    "respostas": ["Samuel", "Natã", "Elias", "Eliseu"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem foi levado ao céu em uma carruagem de fogo?",
+    "respostas": ["Elias", "Enoque", "Eliseu", "Jeremias"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem cortou o cabelo de Sansão?",
+    "respostas": ["Dalila", "Ester", "Jezabel", "Raquel"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Qual discípulo era médico?",
+    "respostas": ["Lucas", "Mateus", "Tiago", "Bartolomeu"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quantos dias e noites choveu no dilúvio?",
+    "respostas": ["40", "30", "20", "7"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quantos dias Jesus jejuou no deserto?",
+    "respostas": ["40", "21", "7", "10"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem sucedeu Elias como profeta?",
+    "respostas": ["Eliseu", "Jeremias", "Isaías", "Malaquias"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem interpretou os sonhos do rei Nabucodonosor?",
+    "respostas": ["Daniel", "José", "Ezequiel", "Isaías"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Qual rei lançou Sadraque, Mesaque e Abede-Nego na fornalha?",
+    "respostas": ["Nabucodonosor", "Dario", "Belsazar", "Ciro"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem foi o pai de João Batista?",
+    "respostas": ["Zacarias", "Simeão", "Ananias", "Caifás"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem foi a mãe de João Batista?",
+    "respostas": ["Isabel", "Maria", "Marta", "Rebeca"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem foi a rainha que salvou seu povo?",
+    "respostas": ["Ester", "Rute", "Sara", "Débora"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem foi o primo e tutor de Ester?",
+    "respostas": ["Mardoqueu", "Neemias", "Esdras", "Ageu"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem escreveu o livro do Apocalipse?",
+    "respostas": ["João", "Paulo", "Pedro", "Tiago"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Qual é o último livro da Bíblia?",
+    "respostas": ["Apocalipse", "Judas", "Hebreus", "Atos"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Qual é o primeiro livro da Bíblia?",
+    "respostas": ["Gênesis", "Êxodo", "Levítico", "Números"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem construiu o primeiro Templo em Jerusalém?",
+    "respostas": ["Salomão", "Davi", "Josias", "Ezequias"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem pediu o corpo de Jesus a Pilatos?",
+    "respostas": ["José de Arimateia", "Nicodemos", "Simão de Cirene", "Bartimeu"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem ajudou a carregar a cruz de Jesus?",
+    "respostas": ["Simão de Cirene", "José de Arimateia", "João", "André"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem foi a primeira a ver Jesus ressuscitado?",
+    "respostas": ["Maria Madalena", "Maria mãe de Jesus", "Marta", "Salomé"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Em qual rio Naamã foi curado da lepra?",
+    "respostas": ["Jordão", "Eufrates", "Tigre", "Nilo"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "O que Deus enviou do céu para alimentar Israel no deserto?",
+    "respostas": ["Maná", "Cordornizes", "Pão", "Trigo"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem derrubou os muros de Jericó sob ordem de Deus?",
+    "respostas": ["Josué", "Moisés", "Calebe", "Gideão"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem foi o pai de Abraão?",
+    "respostas": ["Terá", "Naor", "Haran", "Pelegue"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem foi a esposa de Isaque?",
+    "respostas": ["Rebeca", "Raquel", "Sara", "Lia"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Para qual cidade Jonas foi enviado por Deus?",
+    "respostas": ["Nínive", "Társis", "Samaria", "Damasco"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem reconstruiu o Templo após o exílio babilônico?",
+    "respostas": ["Zorobabel", "Neemias", "Esdras", "Ageu"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem foi o primeiro mártir cristão mencionado em Atos?",
+    "respostas": ["Estevão", "Tiago", "Pedro", "Paulo"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem subiu numa árvore para ver Jesus passar?",
+    "respostas": ["Zaqueu", "Nicodemos", "Bartimeu", "Simão"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Qual profeta casou-se por ordem de Deus como sinal para Israel?",
+    "respostas": ["Oséias", "Jeremias", "Ezequiel", "Malaquias"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem disse: 'Eu sou a voz do que clama no deserto'?",
+    "respostas": ["João Batista", "Isaías", "Elias", "Jeremias"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quais foram os três presentes trazidos pelos magos?",
+    "respostas": ["Ouro, incenso e mirra", "Ouro, prata e bronze", "Mirra, prata e azeite", "Incenso, vinho e pão"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem ficou mudo até o nascimento de seu filho?",
+    "respostas": ["Zacarias", "Ananias", "Caifás", "José de Arimateia"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Qual discípulo foi chamado 'filho do trovão' junto com seu irmão?",
+    "respostas": ["Tiago (filho de Zebedeu)", "Tiago (irmão do Senhor)", "Filipe", "Tomé"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem interpretou o sonho do padeiro e do copeiro no Egito?",
+    "respostas": ["José", "Moisés", "Daniel", "Jeremias"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quantas pragas Deus enviou sobre o Egito?",
+    "respostas": ["10", "7", "12", "3"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem sucedeu Moisés na liderança de Israel?",
+    "respostas": ["Josué", "Calebe", "Arão", "Nadabe"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "De qual tribo era Saul, o primeiro rei de Israel?",
+    "respostas": ["Benjamim", "Judá", "Efraim", "Manassés"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem profetizou o vale de ossos secos?",
+    "respostas": ["Ezequiel", "Isaías", "Jeremias", "Miqueias"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Qual profeta sobreviveu em um grande peixe por três dias?",
+    "respostas": ["Jonas", "Jó", "Elias", "Amós"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem disse: 'Eu e minha casa serviremos ao Senhor'?",
+    "respostas": ["Josué", "Moisés", "Calebe", "Gideão"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Qual era o nome do gigante morto por Davi?",
+    "respostas": ["Golias", "Isbi-Benobe", "Lami", "Saf"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem caiu do cavalo a caminho de Damasco?",
+    "respostas": ["Saulo (Paulo)", "Pedro", "Filipe", "Barnabé"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Qual era a profissão de Pedro antes de seguir Jesus?",
+    "respostas": ["Pescador", "Carpinteiro", "Pastor", "Publicano"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem foi instruído por Deus a oferecer Isaque em sacrifício?",
+    "respostas": ["Abraão", "Jacó", "Noé", "Moisés"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Qual patriarca teve o nome mudado para Israel?",
+    "respostas": ["Jacó", "Isaque", "José", "Esaú"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem interpretou a escrita 'Mene, Mene, Tekel, Parsim'?",
+    "respostas": ["Daniel", "Ester", "Neemias", "Esdras"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem reconstruiu os muros de Jerusalém após o exílio?",
+    "respostas": ["Neemias", "Esdras", "Zorobabel", "Ageu"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Qual profeta enfrentou os profetas de Baal no Monte Carmelo?",
+    "respostas": ["Elias", "Eliseu", "Isaías", "Jeremias"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem foi o profeta que sucedeu Elias?",
+    "respostas": ["Eliseu", "Jeremias", "Oséias", "Amós"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Qual rei pediu sabedoria a Deus?",
+    "respostas": ["Salomão", "Davi", "Ezequias", "Josias"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem escreveu a maioria das cartas do Novo Testamento?",
+    "respostas": ["Paulo", "Pedro", "Tiago", "Judas"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem negou Jesus três vezes?",
+    "respostas": ["Pedro", "João", "Tiago", "Tomé"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Qual discípulo duvidou da ressurreição até ver as marcas?",
+    "respostas": ["Tomé", "Pedro", "Filipe", "André"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem foi o primeiro rei ungido por Samuel?",
+    "respostas": ["Saul", "Davi", "Salomão", "Roboão"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "A quem Deus disse: 'Tira as sandálias, porque o lugar é santo'?",
+    "respostas": ["Moisés", "Josué", "Jacó", "Samuel"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem interpretou o sonho das sete vacas gordas e sete magras?",
+    "respostas": ["José", "Daniel", "Moisés", "Abraão"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quantas vezes Israel rodeou Jericó no sétimo dia?",
+    "respostas": ["7", "1", "3", "12"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem foi a mulher que escondeu os espias em Jericó?",
+    "respostas": ["Raabe", "Rute", "Ester", "Débora"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem matou 450 profetas de Baal após o fogo descer do céu?",
+    "respostas": ["Elias", "Jeú", "Sansão", "Gideão"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Qual profeta viu uma escada que tocava o céu?",
+    "respostas": ["Jacó", "Abraão", "Isaque", "José"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem perdeu as forças após ter o cabelo cortado?",
+    "respostas": ["Sansão", "Saul", "Absalão", "Davi"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Qual milagre Jesus realizou em Caná da Galileia?",
+    "respostas": ["Transformou água em vinho", "Curou um leproso", "Acalmou a tempestade", "Multiplicou pães"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem ressuscitou após tocar nos ossos de Eliseu?",
+    "respostas": ["Um homem morto lançado na cova", "O filho da sunamita", "Lázaro", "Tabita (Dorcas)"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem desafiou Golias junto ao vale de Elá?",
+    "respostas": ["Davi", "Abner", "Joabe", "Isbosete"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem subiu ao monte para oferecer Isaque?",
+    "respostas": ["Abraão", "Jacó", "Isaque", "Moisés"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem foi chamado de 'amigo de Deus'?",
+    "respostas": ["Abraão", "Moisés", "Davi", "Samuel"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem reconstruiu o altar do Senhor destruído em tempos de Acabe?",
+    "respostas": ["Elias", "Eliseu", "Jeú", "Micaías"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Qual rei teve a vida prolongada em 15 anos após oração?",
+    "respostas": ["Ezequias", "Josias", "Manassés", "Uzias"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem escreveu Lamentações?",
+    "respostas": ["Jeremias", "Isaías", "Ezequiel", "Daniel"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem foi engolido pela terra com sua família por rebelar-se contra Moisés?",
+    "respostas": ["Corá", "Datã", "Abirão", "Nadabe"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem foi chamado no templo enquanto dormia, ainda menino?",
+    "respostas": ["Samuel", "Jeremias", "Isaías", "Ezequiel"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem curou Naamã da lepra, enviando-o ao Jordão?",
+    "respostas": ["Eliseu", "Elias", "Samuel", "Natã"],
+    "correta": 0,
+    "dificuldade": "medio"
+  },
+  {
+    "pergunta": "Quem caiu do andar superior e foi ressuscitado por Paulo?",
+    "respostas": ["Êutico", "Tíquico", "Epafrodito", "Onésimo"],
+    "correta": 0,
+    "dificuldade": "dificil"
+  },
+  {
+    "pergunta": "Quem foi a mãe de Samuel?",
+    "respostas": ["Ana", "Sara", "Raquel", "Rebeca"],
+    "correta": 0,
+    "dificuldade": "facil"
+  },
+  {
+    "pergunta": "Quem teve sonhos proféticos enquanto servia a Potifar e no cárcere?",
+    "respostas": ["José", "Daniel", "Neemias", "Esdras"],
+    "correta": 0,
+    "dificuldade": "facil"
+  }
+]
