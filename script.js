@@ -135,6 +135,7 @@ function verificarResposta(acertou, dificuldade, botaoClicado) {
     if (acertou) {
         botaoClicado.classList.add("correct");
         adicionarPontos(dificuldade);
+        trocarEquipe(); // Troca a equipe mesmo no acerto
         // Apenas espera um pouco e vai para a próxima rodada
         setTimeout(iniciarRodada, 1200);
     } else {
