@@ -78,10 +78,14 @@ function triggerFade(...elements) {
 
 let perguntasShuffled = [];
 let perguntaIndex = 0;
+// Armazena as opções removidas (erradas) por pergunta atual (chave: índice da pergunta)
+let removidasPorPergunta = new Map();
 
 function prepararPerguntas() {
     perguntasShuffled = shuffleArray(perguntas);
     perguntaIndex = 0;
+    // Zera o mapa de opções removidas para uma nova sequência de perguntas
+    removidasPorPergunta = new Map();
 }
 
 function iniciarRodada() {
@@ -102,16 +106,27 @@ function mostrarProximaPergunta() {
     if (perguntaIndex >= perguntasShuffled.length) {
         prepararPerguntas();
     }
-    const pergunta = perguntasShuffled[perguntaIndex++];
+    // NÃO incrementa aqui; apenas mostra a pergunta atual
+    const pergunta = perguntasShuffled[perguntaIndex];
+
     elementoPergunta.textContent = pergunta.pergunta;
     elementoRespostas.innerHTML = "";
     atualizarDificuldadeDisplay(pergunta.dificuldade);
 
+    // Opções com flag de correta
     const opcoes = pergunta.respostas.map((texto, idx) => ({
         texto,
         correta: idx === pergunta.correta
     }));
-    const opcoesEmbaralhadas = shuffleArray(opcoes);
+
+    // Recupera as opções já removidas (erradas clicadas antes) nesta mesma pergunta
+    const removidas = removidasPorPergunta.get(perguntaIndex) || new Set();
+
+    // Filtra as opções: não renderiza as removidas
+    const opcoesFiltradas = opcoes.filter(op => !removidas.has(op.texto));
+
+    // Embaralha as remanescentes
+    const opcoesEmbaralhadas = shuffleArray(opcoesFiltradas);
 
     opcoesEmbaralhadas.forEach(op => {
         const botaoResposta = document.createElement("button");
@@ -133,20 +148,40 @@ function verificarResposta(acertou, dificuldade, botaoClicado) {
     botoes.forEach(b => b.disabled = true);
 
     if (acertou) {
+        // Feedback de acerto
         botaoClicado.classList.add("correct");
         adicionarPontos(dificuldade);
-        trocarEquipe(); // Troca a equipe mesmo no acerto
-        // Apenas espera um pouco e vai para a próxima rodada
+
+        // Verifica vencedor antes de continuar
+        if (verificarVencedor()) return;
+
+        // Avança para a próxima pergunta
+        perguntaIndex++;
+        // Alterna a vez mesmo no acerto (regra solicitada anteriormente)
+        trocarEquipe();
+
         setTimeout(iniciarRodada, 1200);
     } else {
+        // Feedback de erro
         botaoClicado.classList.add("wrong", "shake");
+
+        // Remove pontos da equipe atual, garantindo que não fique negativo
+        removerPontos(dificuldade);
+
+        // Marca a opção clicada como removida para esta pergunta
+        const textoRemovido = botaoClicado.textContent;
+        const setRemovidas = removidasPorPergunta.get(perguntaIndex) || new Set();
+        setRemovidas.add(textoRemovido);
+        removidasPorPergunta.set(perguntaIndex, setRemovidas);
+
+        // Alterna a vez após o erro
         trocarEquipe();
-        
-        // Mostra o modal após a animação de erro
+
+        // Mostra o modal após a animação de erro e volta com a mesma pergunta (sem incrementar índice)
         setTimeout(() => {
             const mensagem = `Resposta errada! A vez é da Equipe ${equipeDaVez}.`;
             mostrarModal("Ops!", mensagem, "Continuar", iniciarRodada);
-        }, 600); // A duração da animação shake
+        }, 600);
     }
 }
 
@@ -160,6 +195,16 @@ function adicionarPontos(dificuldade) {
     const pontos = dificuldade === "facil" ? 10 : dificuldade === "medio" ? 20 : 30;
     if (equipeDaVez === "A") pontosEquipeA += pontos;
     else pontosEquipeB += pontos;
+    atualizarPlacar();
+}
+
+function removerPontos(dificuldade) {
+    const pontos = dificuldade === "facil" ? 10 : dificuldade === "medio" ? 20 : 30;
+    if (equipeDaVez === "A") {
+        pontosEquipeA = Math.max(0, pontosEquipeA - pontos);
+    } else {
+        pontosEquipeB = Math.max(0, pontosEquipeB - pontos);
+    }
     atualizarPlacar();
 }
 
@@ -226,4 +271,34 @@ async function iniciarAplicacao() {
         prepararPerguntas();
         iniciarRodada();
     }
+}
+
+
+function verificarVencedor() {
+    if (pontosEquipeA >= 150 || pontosEquipeB >= 150) {
+        const vencedor = pontosEquipeA >= 150 ? "A" : "B";
+        mostrarModal(
+            "Fim de Jogo",
+            `Equipe ${vencedor} atingiu 150 pontos e venceu!`,
+            "Reiniciar",
+            () => {
+                // Reinicia o jogo
+                pontosEquipeA = 0;
+                pontosEquipeB = 0;
+                atualizarPlacar();
+
+                // Você pode decidir quem começa após reiniciar; aqui deixo o vencedor começar
+                equipeDaVez = vencedor;
+                atualizarEquipeDaVezDisplay();
+
+                prepararPerguntas();
+                perguntaIndex = 0;
+                removidasPorPergunta = new Map();
+
+                iniciarRodada();
+            }
+        );
+        return true;
+    }
+    return false;
 }
