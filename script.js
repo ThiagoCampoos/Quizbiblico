@@ -237,6 +237,18 @@ function iniciarContador() {
     }, 1000);
 }
 
+function passarPergunta(){
+    clearInterval(timer);
+    trocarEquipe();
+    mostrarModal(
+        "Passar Pergunta",
+        `Agora é a vez da Equipe ${equipeDaVez}.`,
+        "Continuar",
+        iniciarRodada
+    );
+    
+}
+
 // Carregar perguntas do JSON
 async function carregarPerguntas() {
     try {
@@ -271,6 +283,7 @@ async function iniciarAplicacao() {
         prepararPerguntas();
         iniciarRodada();
     }
+    document.getElementById("btnPassar").addEventListener("click", passarPergunta);
 }
 
 
