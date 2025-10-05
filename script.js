@@ -239,14 +239,43 @@ function iniciarContador() {
 
 function passarPergunta(){
     clearInterval(timer);
+    
+    // Elimina uma resposta errada aleatória antes de passar
+    eliminarRespostaErrada();
+    
     trocarEquipe();
     mostrarModal(
-        "Passar Pergunta",
-        `Agora é a vez da Equipe ${equipeDaVez}.`,
+        "Pergunta Passada",
+        `Uma alternativa errada foi eliminada. Agora é a vez da Equipe ${equipeDaVez}.`,
         "Continuar",
         iniciarRodada
     );
+}
+
+function eliminarRespostaErrada() {
+    const pergunta = perguntasShuffled[perguntaIndex];
+    if (!pergunta) return;
     
+    // Obtém as opções já removidas para esta pergunta
+    const removidas = removidasPorPergunta.get(perguntaIndex) || new Set();
+    
+    // Identifica todas as respostas erradas que ainda não foram removidas
+    const respostasErradas = pergunta.respostas
+        .map((texto, idx) => ({ texto, idx }))
+        .filter(op => op.idx !== pergunta.correta && !removidas.has(op.texto));
+    
+    // Se ainda há respostas erradas disponíveis para eliminar
+    if (respostasErradas.length > 0) {
+        // Seleciona uma resposta errada aleatória
+        const respostaParaEliminar = respostasErradas[Math.floor(Math.random() * respostasErradas.length)];
+        
+        // Adiciona ao conjunto de removidas
+        const setRemovidas = removidasPorPergunta.get(perguntaIndex) || new Set();
+        setRemovidas.add(respostaParaEliminar.texto);
+        removidasPorPergunta.set(perguntaIndex, setRemovidas);
+        
+        console.log(`Resposta eliminada: "${respostaParaEliminar.texto}"`);
+    }
 }
 
 // Carregar perguntas do JSON
